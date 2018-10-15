@@ -1,0 +1,39 @@
+title: Lab notebook
+short-title: ELN # this prepended to the page title
+author: I-Ting Huang
+website: https://github.com/I-TingH/lab_notes.git
+description: >
+
+
+github_username: I-TingH
+
+permalink: /log/:year_:month/
+
+# Build settings
+markdown: kramdown
+theme: jekyll-lab-notebook
+
+plugins:
+- jekyll-lab-notebook-plugins
+
+jekyll-lab-notebook:
+  home-page:
+    -
+      name: Log
+      is_posts: true
+      hidden: false
+    -
+      name: Scripts
+      dir: 'scripts/'
+      hidden: true
+    -
+      name: Other
+      dir: 'random/'
+      hidden: true
+
+# live reload options
+livereload: true
+reload_port: 5678
+
+# prevent jekyll from exploding on Travis
+exclude: [vendor]
