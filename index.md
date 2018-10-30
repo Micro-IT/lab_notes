@@ -34,11 +34,3 @@ Assembly Pipeline overview
   7. Genome annotation with Prokka
   8. Pan-genome construction and core genome alignment with Roary
   9. Preliminary Data analyses with Roary output
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
