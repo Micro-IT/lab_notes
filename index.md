@@ -2,117 +2,38 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## Current Summary of Project Progress
 
-[Link to another page](./another-page.html).
+**Overview of project progress (10/30/2018 update)**
 
-There should be whitespace between paragraphs.
+A condensed summary of work done so far
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+### _neisseria meningitidis_ 
 
-# Header 1
+* June / July 2018
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+1. Filter for wgMLST of carriage isolates
+2. Extraction of data from BIGsdb using custom script (python)
+3. Dataset cleanup
+4. Allele frequency correlation analysis / plot (python)
 
-## Header 2
+### _streptococcus agalactiae_ (GBS)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+* September / October 2018
 
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+Assembly Pipeline overview
+  1. Download/Extract Data
+    - PubMLST
+    - ENA 
+    - SRA
+  2. Quality check with FASTQC and MultiQC
+  3. Preprocessing with Trimmomatic using compiled database of adapters
+  4. Quality check with FASTQC and MultiQC
+  5. De novo assembly with SPADES
+  6. Assembly quality check with Quast/ Visualization with Bandage
+  7. Genome annotation with Prokka
+  8. Pan-genome construction and core genome alignment with Roary
+  9. Preliminary Data analyses with Roary output
 
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
